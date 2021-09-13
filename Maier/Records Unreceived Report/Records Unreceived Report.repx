@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="19.1.6.0" Ref="1" ControlType="Needles.ReportDesigner.ReportObjects.UserDefinedReport, Needles.ReportDesigner, Version=5.0.0.43732, Culture=neutral, PublicKeyToken=null" Name="userDefinedReport1" DisplayName="Records Unreceived Report" Landscape="true" Margins="50, 50, 50, 50" PageWidth="1100" PageHeight="850" Version="19.1" DataMember="Query" DataSource="#Ref-0" Font="Segoe UI, 10pt">
+  <Extensions>
+    <Item1 Ref="2" Key="NeedlesStyleSheetName" Value="'Needles'" />
+    <Item2 Ref="3" Key="DataSerializationExtension" Value="CustomTypes" />
+    <Item3 Ref="4" Key="DataEditorExtension" Value="CustomTypes" />
+    <Item4 Ref="5" Key="ParameterEditorExtension" Value="CustomTypes" />
+    <Item5 Ref="6" Key="XtraReportId" Value="1f672164-66a9-4123-a701-ad7c0103d360" />
+  </Extensions>
+  <Bands>
+    <Item1 Ref="7" ControlType="DetailBand" Name="Detail" HeightF="23" TextAlignment="TopLeft" StyleName="DataField" Padding="0,0,0,0,100">
+      <Controls>
+        <Item1 Ref="8" ControlType="XRLabel" Name="label13" Multiline="true" Text="label13" SizeF="77,23" LocationFloat="923, 0" Padding="2,2,0,0,100">
+          <DataBindings>
+            <Item1 Ref="9" PropertyName="Text" DataMember="Query.ordered_by" />
+          </DataBindings>
+        </Item1>
+        <Item2 Ref="10" ControlType="XRLabel" Name="label16" TextFormatString="{0:MM/dd/yyyy}" Multiline="true" Text="label16" SizeF="151,23" LocationFloat="772, 0" Padding="2,2,0,0,100">
+          <DataBindings>
+            <Item1 Ref="11" PropertyName="Text" DataMember="Query.type_of_record" />
+          </DataBindings>
+        </Item2>
+        <Item3 Ref="12" ControlType="XRLabel" Name="label15" TextFormatString="{0:MM/dd/yyyy}" Multiline="true" Text="label15" SizeF="82,23" LocationFloat="690, 0" Padding="2,2,0,0,100">
+          <DataBindings>
+            <Item1 Ref="13" PropertyName="Text" DataMember="Query.date_request" />
+          </DataBindings>
+        </Item3>
+        <Item4 Ref="14" ControlType="XRLabel" Name="label14" Multiline="true" Text="label14" SizeF="303.333038,23" LocationFloat="386.667, 0" Padding="2,2,0,0,100">
+          <DataBindings>
+            <Item1 Ref="15" PropertyName="Text" DataMember="Query.provider_name" />
+          </DataBindings>
+        </Item4>
+        <Item5 Ref="16" ControlType="XRLabel" Name="label12" Multiline="true" Text="label12" SizeF="57.541748,23" LocationFloat="329.1252, 0" Padding="2,2,0,0,100">
+          <DataBindings>
+            <Item1 Ref="17" PropertyName="Text" DataMember="Query.staff_1" />
+          </DataBindings>
+        </Item5>
+        <Item6 Ref="18" ControlType="XRLabel" Name="label11" Multiline="true" Text="label11" SizeF="39.00009,23" LocationFloat="290.125122, 0" Padding="2,2,0,0,100">
+          <DataBindings>
+            <Item1 Ref="19" PropertyName="Text" DataMember="Query.matcode" />
+          </DataBindings>
+        </Item6>
+        <Item7 Ref="20" ControlType="XRLabel" Name="label10" Multiline="true" Text="label10" SizeF="219.291779,23" LocationFloat="70.83334, 0" Padding="2,2,0,0,100">
+          <DataBindings>
+            <Item1 Ref="21" PropertyName="Text" DataMember="Query.party_name" />
+          </DataBindings>
+        </Item7>
+        <Item8 Ref="22" ControlType="XRLabel" Name="label9" Multiline="true" Text="label9" TextAlignment="TopLeft" SizeF="70.83334,23" LocationFloat="0, 0" Padding="2,2,0,0,100">
+          <DataBindings>
+            <Item1 Ref="23" PropertyName="Text" DataMember="Query.casenum" />
+          </DataBindings>
+          <StylePriority Ref="24" UseTextAlignment="false" />
+        </Item8>
+      </Controls>
+      <StylePriority Ref="25" UseFont="false" />
+    </Item1>
+    <Item2 Ref="26" ControlType="TopMarginBand" Name="TopMargin" HeightF="50" TextAlignment="BottomLeft" StyleName="PageInfo" Padding="0,0,0,0,100">
+      <Controls>
+        <Item1 Ref="27" ControlType="Needles.ReportDesigner.Controls.FirmNameLabel, Needles.ReportDesigner, Version=5.0.0.43732, Culture=neutral, PublicKeyToken=null" Name="firmNameLabel1" Text="Firm Name" TextAlignment="MiddleCenter" SizeF="1000,23" LocationFloat="0, 27" Padding="2,2,0,0,100" />
+      </Controls>
+    </Item2>
+    <Item3 Ref="28" ControlType="BottomMarginBand" Name="BottomMargin" HeightF="50" TextAlignment="BottomLeft" StyleName="PageInfo" Padding="0,0,0,0,100" />
+    <Item4 Ref="29" ControlType="PageHeaderBand" Name="PageHeader" HeightF="100.624992" TextAlignment="MiddleLeft" StyleName="FieldCaption">
+      <Controls>
+        <Item1 Ref="30" ControlType="XRLabel" Name="label1" Text="Ordered By" SizeF="76.083374,39" LocationFloat="923, 53.29165" Padding="2,2,0,0,100" />
+        <Item2 Ref="31" ControlType="XRLabel" Name="label8" Multiline="true" Text="Type of Order&#xD;&#xA;" SizeF="151,39" LocationFloat="772, 53.29165" Padding="2,2,0,0,100" />
+        <Item3 Ref="32" ControlType="XRLabel" Name="label7" Text="Date Requested" SizeF="82,39" LocationFloat="690, 53.29165" Padding="2,2,0,0,100" />
+        <Item4 Ref="33" ControlType="XRLabel" Name="label3" Text="Provider Name" SizeF="303.333069,39" LocationFloat="386.666962, 52.79166" Padding="2,2,0,0,100" />
+        <Item5 Ref="34" ControlType="XRLabel" Name="label6" Text="Primary Staff" SizeF="57.5417175,39" LocationFloat="329.125244, 52.79166" Padding="2,2,0,0,100" />
+        <Item6 Ref="35" ControlType="XRLabel" Name="label5" Text="Case Type" SizeF="39,39" LocationFloat="290.1252, 52.79166" Padding="2,2,0,0,100" />
+        <Item7 Ref="36" ControlType="XRLabel" Name="label2" Text="Case #" SizeF="70.83334,39" LocationFloat="0, 52.79166" Padding="2,2,0,0,100" />
+        <Item8 Ref="37" ControlType="XRLabel" Name="label4" Text="Party Name" SizeF="219.291779,39" LocationFloat="70.83334, 52.79166" Padding="2,2,0,0,100" />
+        <Item9 Ref="38" ControlType="XRLabel" Name="label21" Text="Records Unreceived Report" TextAlignment="MiddleCenter" SizeF="1000,35" LocationFloat="0, 0" StyleName="Title" Font="Segoe UI, 16pt, style=Bold" Padding="2,2,0,0,100" />
+        <Item10 Ref="39" ControlType="XRLine" Name="line2" LineWidth="2" SizeF="1000,6.333344" LocationFloat="0, 94.29165" />
+      </Controls>
+    </Item4>
+    <Item5 Ref="40" ControlType="PageFooterBand" Name="PageFooter" HeightF="23" TextAlignment="BottomLeft" StyleName="PageInfo">
+      <Controls>
+        <Item1 Ref="41" ControlType="XRPageInfo" Name="pageInfo4" PageInfo="DateTime" TextFormatString="{0:MM/dd/yyyy h:mm tt}" SizeF="248.5,23" LocationFloat="2.083333, 0" StyleName="CurrentDateTime" Padding="2,2,0,0,100" />
+        <Item2 Ref="42" ControlType="XRPageInfo" Name="pageInfo3" TextFormatString="Page {0} of {1}" TextAlignment="TopRight" SizeF="249.5417,23" LocationFloat="749.5417, 0" StyleName="PageNofN" Padding="2,2,0,0,100" />
+        <Item3 Ref="43" ControlType="Needles.ReportDesigner.Controls.CurrentUserLabel, Needles.ReportDesigner, Version=5.0.0.43732, Culture=neutral, PublicKeyToken=null" Name="currentUserLabel2" Text="Current User" TextAlignment="MiddleCenter" SizeF="498.9584,23" LocationFloat="250.5833, 0" StyleName="RunBy" Padding="2,2,0,0,100" />
+      </Controls>
+    </Item5>
+    <Item6 Ref="44" ControlType="ReportHeaderBand" Name="ReportHeader" Expanded="false" HeightF="51" StyleName="Title" />
+  </Bands>
+  <Scripts Ref="45" OnParametersRequestSubmit="userDefinedReport1_ParametersRequestSubmit" />
+  <ExportOptions Ref="46">
+    <PrintPreview Ref="47" DefaultDirectory="C:\Users\NDLSTest9\Desktop" />
+  </ExportOptions>
+  <StyleSheet>
+    <Item1 Ref="48" Name="PageInfo" BorderStyle="Inset" Font="Calibri, 9pt, style=Bold, charSet=0" BackColor="Transparent" BorderColor="Black" StringFormat="Near;Far;0;None;Character;Default" TextAlignment="BottomLeft" />
+    <Item2 Ref="49" Name="FieldCaption" BorderStyle="Inset" Font="Segoe UI, 10pt, style=Bold, charSet=0" ForeColor="Maroon" BackColor="Transparent" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" />
+    <Item3 Ref="50" Name="DataField" BorderStyle="Inset" Font="Segoe UI, 9pt, charSet=0" ForeColor="Black" BackColor="Transparent" BorderColor="Black" StringFormat="Near;Near;0;None;Character;Default" TextAlignment="TopLeft" />
+    <Item4 Ref="51" Name="FirmNameStyle" BorderStyle="Inset" Font="Calibri, 9pt, style=Bold, charSet=0" BackColor="0,0,0,0" BorderColor="Transparent" StringFormat="Center;Center;0;None;Character;Default" TextAlignment="MiddleCenter" />
+    <Item5 Ref="52" Name="Title" BorderStyle="Inset" Font="Segoe UI, 18pt, style=Bold, charSet=0" ForeColor="Maroon" StringFormat="Center;Near;0;None;Character;Default" TextAlignment="TopCenter" />
+    <Item6 Ref="53" Name="CurrentDateTime" BorderStyle="Inset" Font="Calibri, 9pt, style=Bold, charSet=0" StringFormat="Near;Far;0;None;Character;Default" TextAlignment="BottomLeft" />
+    <Item7 Ref="54" Name="RunBy" BorderStyle="Inset" Font="Calibri, 9pt, style=Bold, charSet=0" StringFormat="Center;Far;0;None;Character;Default" TextAlignment="BottomCenter" />
+    <Item8 Ref="55" Name="PageNofN" BorderStyle="Inset" Font="Calibri, 9pt, style=Bold, charSet=0" StringFormat="Far;Far;0;None;Character;Default" TextAlignment="BottomRight" />
+    <Item9 Ref="56" Name="GroupTitle" BorderStyle="Inset" Font="Segoe UI, 14pt, style=Bold, charSet=0" ForeColor="Maroon" StringFormat="Near;Near;0;None;Character;Default" TextAlignment="TopLeft" />
+    <Item10 Ref="57" Name="GroupFooter" BorderStyle="Inset" Font="Segoe UI, 12pt, style=Bold, charSet=0" StringFormat="Near;Near;0;None;Character;Default" TextAlignment="TopLeft" />
+    <Item11 Ref="58" Name="ReptFooter" BorderStyle="Inset" Font="Segoe UI, 12pt, style=Bold, charSet=0" StringFormat="Near;Near;0;None;Character;Default" TextAlignment="TopLeft" />
+    <Item12 Ref="59" Name="SelectParameter" BorderStyle="Inset" Font="Segoe UI, 7pt" StringFormat="Near;Near;0;None;Character;Default" TextAlignment="TopLeft" />
+    <Item13 Ref="60" Name="ParameterCaption" BorderStyle="Inset" Font="Segoe UI, 7pt, style=Bold, charSet=0" StringFormat="Near;Near;0;None;Character;Default" TextAlignment="TopLeft" />
+  </StyleSheet>
+  <ComponentStorage>
+    <Item1 Ref="0" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v19.1" Name="sqlDataSource2" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTIiPjxDb25uZWN0aW9uIE5hbWU9Ik5lZWRsZXNTcWxEYXRhU291cmNlIiBQcm92aWRlcktleT0iTVNTcWxTZXJ2ZXIiPjxQYXJhbWV0ZXJzPjxQYXJhbWV0ZXIgTmFtZT0ic2VydmVyIiBWYWx1ZT0iSFZORUVETEVTNVRFU1RcU1FMMksxOSIgLz48UGFyYW1ldGVyIE5hbWU9ImRhdGFiYXNlIiBWYWx1ZT0iMjI5MzI5LW1haWVyIiAvPjxQYXJhbWV0ZXIgTmFtZT0idXNlSW50ZWdyYXRlZFNlY3VyaXR5IiBWYWx1ZT0iRmFsc2UiIC8+PFBhcmFtZXRlciBOYW1lPSJyZWFkIG9ubHkiIFZhbHVlPSIxIiAvPjxQYXJhbWV0ZXIgTmFtZT0iZ2VuZXJhdGVDb25uZWN0aW9uSGVscGVyIiBWYWx1ZT0iZmFsc2UiIC8+PFBhcmFtZXRlciBOYW1lPSJ1c2VyaWQiIFZhbHVlPSJuZWVkbGVzYXBwIiAvPjxQYXJhbWV0ZXIgTmFtZT0icGFzc3dvcmQiIFZhbHVlPSJ2NWlnTkMxciIgLz48L1BhcmFtZXRlcnM+PC9Db25uZWN0aW9uPjxRdWVyeSBUeXBlPSJDdXN0b21TcWxRdWVyeSIgTmFtZT0iUXVlcnkiPjxTcWw+c2VsZWN0DQoJY2FzZXMuY2FzZW51bSwNCgkoc2VsZWN0IHRvcCAxIG5hbWVzLmZ1bGxuYW1lX2xhc3RmaXJzdCBmcm9tIG5hbWVzLHBhcnR5IHdoZXJlIG5hbWVzaWQ9bmFtZXMuaWQgYW5kIHBhcnR5Lm5hbWVzaWQ9bmFtZXMuaWQgYW5kIHBhcnR5LmNhc2VzaWQ9Y2FzZXMuaWQgb3JkZXIgYnkgcmVjb3JkX251bSBhc2MpIGFzIHBhcnR5X25hbWUsDQoJbWF0dGVyLm1hdGNvZGUsDQoJKHNlbGVjdCBzdGFmZl9jb2RlIGZyb20gY2FzZV9zdGFmZiwgc3RhZmYsIG1hdHRlcl9zdGFmZiB3aGVyZSBjYXNlcy5pZCA9IGNhc2Vfc3RhZmYuY2FzZXNpZCANCmFuZCBzdGFmZi5pZCA9IGNhc2Vfc3RhZmYuc3RhZmZpZCBhbmQgY2FzZV9zdGFmZi5tYXR0ZXJzdGFmZmlkPW1hdHRlcl9zdGFmZi5pZCANCmFuZCBzdGFmZnJvbGVpZD0nMDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAxJykgYXMgc3RhZmZfMSwNCgkoc2VsZWN0IHRvcCAxIGRhdGEgZnJvbSB1c2VyX3RhYjJfZGF0YSx1c2VyX2Nhc2VfZmllbGRzIHdoZXJlIHVzZXJfdGFiMl9kYXRhLnRhYmxpc3RpZD11c2VyX3RhYjJfbGlzdC5pZCAgYW5kIHVzZXJfY2FzZV9maWVsZHMuaWQ9dXNlcl90YWIyX2RhdGEudXNlcmNhc2VmaWVsZGlkDQoJCQlhbmQgdXNlcl9jYXNlX2ZpZWxkcy5maWVsZF90aXRsZT0nUHJvdmlkZXIgTmFtZScpIGFzIHByb3ZpZGVyX25hbWUsDQoJKHNlbGVjdCB0b3AgMSB0cnlfY2FzdChkYXRhIGFzIGRhdGUpIGZyb20gdXNlcl90YWIyX2RhdGEsdXNlcl9jYXNlX2ZpZWxkcyB3aGVyZSB1c2VyX3RhYjJfZGF0YS50YWJsaXN0aWQ9dXNlcl90YWIyX2xpc3QuaWQgIGFuZCB1c2VyX2Nhc2VfZmllbGRzLmlkPXVzZXJfdGFiMl9kYXRhLnVzZXJjYXNlZmllbGRpZA0KCQkJYW5kIHVzZXJfY2FzZV9maWVsZHMuZmllbGRfdGl0bGU9J0RhdGUgUmVxdWVzdGVkJykgYXMgZGF0ZV9yZXF1ZXN0LA0KCShzZWxlY3QgdG9wIDEgZGF0YSBmcm9tIHVzZXJfdGFiMl9kYXRhLHVzZXJfY2FzZV9maWVsZHMgd2hlcmUgdXNlcl90YWIyX2RhdGEudGFibGlzdGlkPXVzZXJfdGFiMl9saXN0LmlkICBhbmQgdXNlcl9jYXNlX2ZpZWxkcy5pZD11c2VyX3RhYjJfZGF0YS51c2VyY2FzZWZpZWxkaWQNCgkJCWFuZCB1c2VyX2Nhc2VfZmllbGRzLmZpZWxkX3RpdGxlPSdUeXBlIG9mIFJlY29yZCcpIGFzIHR5cGVfb2ZfcmVjb3JkLA0KCQkoc2VsZWN0IHRvcCAxIGRhdGEgZnJvbSB1c2VyX3RhYjJfZGF0YSx1c2VyX2Nhc2VfZmllbGRzIHdoZXJlIHVzZXJfdGFiMl9kYXRhLnRhYmxpc3RpZD11c2VyX3RhYjJfbGlzdC5pZCAgYW5kIHVzZXJfY2FzZV9maWVsZHMuaWQ9dXNlcl90YWIyX2RhdGEudXNlcmNhc2VmaWVsZGlkDQoJCQlhbmQgdXNlcl9jYXNlX2ZpZWxkcy5maWVsZF90aXRsZT0nT3JkZXJlZCBCeScpIGFzIG9yZGVyZWRfYnkNCmZyb20gY2FzZXMNCmpvaW4gbWF0dGVyIG9uIG1hdHRlci5pZD1jYXNlcy5tYXR0ZXJpZA0Kam9pbiB1c2VyX3RhYjJfbGlzdCAgb24gdXNlcl90YWIyX2xpc3QuY2FzZXNpZD1jYXNlcy5pZA0Kd2hlcmUgDQoJY2FzZXMuY2xvc2VfZGF0ZSBJUyBOVUxMDQoJQU5EIChzZWxlY3QgdG9wIDEgZGF0YSBmcm9tIHVzZXJfdGFiMl9kYXRhLHVzZXJfY2FzZV9maWVsZHMgd2hlcmUgdXNlcl90YWIyX2RhdGEudGFibGlzdGlkPXVzZXJfdGFiMl9saXN0LmlkICBhbmQgdXNlcl9jYXNlX2ZpZWxkcy5pZD11c2VyX3RhYjJfZGF0YS51c2VyY2FzZWZpZWxkaWQNCgkJCWFuZCB1c2VyX2Nhc2VfZmllbGRzLmZpZWxkX3RpdGxlPSdEYXRlIFJlY2VpdmVkJykgSVMgTlVsbA0KCUFORCAoc2VsZWN0IHRvcCAxIGRhdGEgZnJvbSB1c2VyX3RhYjJfZGF0YSx1c2VyX2Nhc2VfZmllbGRzIHdoZXJlIHVzZXJfdGFiMl9kYXRhLnRhYmxpc3RpZD11c2VyX3RhYjJfbGlzdC5pZCAgYW5kIHVzZXJfY2FzZV9maWVsZHMuaWQ9dXNlcl90YWIyX2RhdGEudXNlcmNhc2VmaWVsZGlkDQoJCQlhbmQgdXNlcl9jYXNlX2ZpZWxkcy5maWVsZF90aXRsZT0nRGF0ZSBSZXF1ZXN0ZWQnKSBJUyBOT1QgTlVsbDwvU3FsPjwvUXVlcnk+PFJlc3VsdFNjaGVtYT48RGF0YVNldCBOYW1lPSJzcWxEYXRhU291cmNlMiI+PFZpZXcgTmFtZT0iUXVlcnkiPjxGaWVsZCBOYW1lPSJjYXNlbnVtIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icGFydHlfbmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJtYXRjb2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InN0YWZmXzEiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0icHJvdmlkZXJfbmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJkYXRlX3JlcXVlc3QiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJ0eXBlX29mX3JlY29yZCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJvcmRlcmVkX2J5IiBUeXBlPSJTdHJpbmciIC8+PC9WaWV3PjwvRGF0YVNldD48L1Jlc3VsdFNjaGVtYT48Q29ubmVjdGlvbk9wdGlvbnMgQ2xvc2VDb25uZWN0aW9uPSJ0cnVlIiBEYkNvbW1hbmRUaW1lb3V0PSIwIiAvPjwvU3FsRGF0YVNvdXJjZT4=" />
+  </ComponentStorage>
+</XtraReportsLayoutSerializer>

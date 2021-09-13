@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="19.1.6.0" Ref="1" ControlType="Needles.ReportDesigner.ReportObjects.CaseReport, Needles.ReportDesigner, Version=5.0.0.43721, Culture=neutral, PublicKeyToken=null" Name="caseReport1" DisplayName="Deposition Status Report" Landscape="true" Margins="50, 50, 50, 50" PageWidth="1100" PageHeight="850" Version="19.1" EventsInfo="caseReport1,DesignerLoaded,OnDesignerLoaded;caseReport1,ParametersRequestSubmit,ReportObjectBaseParametersRequestSubmit;caseReport1,AfterPrint,ReportObjectAfterPrint" FilterString="[UserTab1][[UserDefinedData][[DepoNeeded] Like ?DepoNeededParm]]" DataSource="#Ref-0" Font="Segoe UI, 10pt">
+  <Extensions>
+    <Item1 Ref="2" Key="NeedlesStyleSheetName" Value="Needles" />
+    <Item2 Ref="3" Key="DataSerializationExtension" Value="CustomTypes" />
+    <Item3 Ref="4" Key="DataEditorExtension" Value="CustomTypes" />
+    <Item4 Ref="5" Key="ParameterEditorExtension" Value="CustomTypes" />
+    <Item5 Ref="6" Key="XtraReportId" Value="5a00312d-a389-4059-9466-ad8700e185c3" />
+  </Extensions>
+  <Parameters>
+    <Item1 Ref="8" Description="Primary Staff" MultiValue="true" Name="PrimaryStaffParm" Type="#Ref-7" />
+    <Item2 Ref="10" Description="Case Type" MultiValue="true" Name="CaseTypeParm" Type="#Ref-9" />
+    <Item3 Ref="11" Visible="false" Description="Any Staff" MultiValue="true" Name="AnyStaffParm" Type="#Ref-7" />
+    <Item4 Ref="13" Visible="false" Description="Staff Role" MultiValue="true" Name="StaffRoleParm" Type="#Ref-12" />
+    <Item5 Ref="15" Visible="false" Description="Staff Role Category" MultiValue="true" Name="StaffRoleCategoryParm" Type="#Ref-14" />
+    <Item6 Ref="17" Visible="false" Description="Class Code" MultiValue="true" Name="ClassCodeParm" Type="#Ref-16" />
+    <Item7 Ref="19" Visible="false" Description="Party" Name="PartyParm" Type="#Ref-18" />
+    <Item8 Ref="21" Visible="false" Description="Case" Name="CaseParm" Type="#Ref-20" />
+    <Item9 Ref="23" Visible="false" Description="Party Role" MultiValue="true" Name="PartyRoleParm" Type="#Ref-22" />
+    <Item10 Ref="25" Visible="false" Description="Our Client" ValueInfo="Y" Name="OurClientParm" />
+    <Item11 Ref="27" Visible="false" Description="ID Code" MultiValue="true" Name="IDCodeParm" Type="#Ref-26" />
+    <Item12 Ref="29" Visible="false" Description="Case Open Date Start" Name="OpenDateStartParm" Type="#Ref-28" />
+    <Item13 Ref="30" Visible="false" Description="Case Open Date End" Name="OpenDateEndParm" Type="#Ref-28" />
+    <Item14 Ref="31" Visible="false" Description="Case Close Date Start" Name="CloseDateStartParm" Type="#Ref-28" />
+    <Item15 Ref="32" Visible="false" Description="Case Close Date End" Name="CloseDateEndParm" Type="#Ref-28" />
+    <Item16 Ref="33" Visible="false" Description="Case Status" ValueInfo="Open Cases" Name="CaseStatusParm" />
+    <Item17 Ref="35" Visible="false" Description="Dormant" Name="DormantParm" Type="#Ref-34" />
+    <Item18 Ref="36" Visible="false" Description="Date of Incident Start" Name="DateOfIncidentDateStartParm" Type="#Ref-28" />
+    <Item19 Ref="37" Visible="false" Description="Date of Incident End" Name="DateOfIncidentDateEndParm" Type="#Ref-28" />
+    <Item20 Ref="38" Visible="false" Description="Export Date Start" Name="ExportDateStartParm" Type="#Ref-28" />
+    <Item21 Ref="39" Visible="false" Description="Export Date End" Name="ExportDateEndParm" Type="#Ref-28" />
+    <Item22 Ref="40" Visible="false" Description="Import Date Start" Name="ImportDateStartParm" Type="#Ref-28" />
+    <Item23 Ref="41" Visible="false" Description="Import Date End" Name="ImportDateEndParm" Type="#Ref-28" />
+    <Item24 Ref="43" Visible="false" Description="Referred By" Name="ReferredByParm" Type="#Ref-42" />
+    <Item25 Ref="44" Visible="false" Description="Referred To" Name="ReferredToParm" Type="#Ref-42" />
+    <Item26 Ref="45" Visible="false" Description="Court" Name="CourtParm" Type="#Ref-42" />
+    <Item27 Ref="46" Visible="false" Description="Judge" Name="JudgeParm" Type="#Ref-42" />
+    <Item28 Ref="48" Visible="false" Description="Companion Group" MultiValue="true" Name="CompanionGroupParm" Type="#Ref-47" />
+    <Item29 Ref="49" Visible="false" Description="Synopsis Search" Name="SynopsisSearchParm" />
+    <Item30 Ref="50" Visible="false" Description="Staff Created" MultiValue="true" Name="StaffCreatedParm" Type="#Ref-7" />
+    <Item31 Ref="51" Visible="false" Description="Created Date Start" Name="CreatedDateStartParm" Type="#Ref-28" />
+    <Item32 Ref="52" Visible="false" Description="Created Date End" Name="CreatedDateEndParm" Type="#Ref-28" />
+    <Item33 Ref="53" Visible="false" Description="Staff Modified" MultiValue="true" Name="StaffModifiedParm" Type="#Ref-7" />
+    <Item34 Ref="54" Visible="false" Description="Modified Date Start" Name="ModifiedDateStartParm" Type="#Ref-28" />
+    <Item35 Ref="55" Visible="false" Description="Modified Date End" Name="ModifiedDateEndParm" Type="#Ref-28" />
+    <Item36 Ref="56" Visible="false" Description="Intake Taken Date Start" Name="IntakeDateUtcDateStartParm" Type="#Ref-28" />
+    <Item37 Ref="57" Visible="false" Description="Intake Taken Date End" Name="IntakeDateUtcDateEndParm" Type="#Ref-28" />
+    <Item38 Ref="58" Visible="false" Description="Resolved Date Start" Name="ResolvedDateStartParm" Type="#Ref-28" />
+    <Item39 Ref="59" Visible="false" Description="Resolved Date End" Name="ResolvedDateEndParm" Type="#Ref-28" />
+    <Item40 Ref="61" Visible="false" Description="Checklist Code" MultiValue="true" Name="ChecklistCodeParm" Type="#Ref-60" />
+    <Item41 Ref="62" Visible="false" Description="Checklist Status" ValueInfo="Open" Name="ChecklistStatusParm" />
+    <Item42 Ref="63" Visible="false" Description="In Litigation?" Name="IsInLitigationParm" Type="#Ref-34" />
+    <Item43 Ref="65" Visible="false" Description="Insurance Type" MultiValue="true" Name="InsuranceTypeParm" Type="#Ref-64" />
+    <Item44 Ref="67" Visible="false" Description="How Resolved" MultiValue="true" Name="HowResolvedParm" Type="#Ref-66" />
+    <Item45 Ref="68" Visible="false" Description="Accept Liability?" Name="AcceptLiabilityParm" Type="#Ref-34" />
+    <Item46 Ref="70" Visible="false" Description="Minimum Amount" Name="MinimumAmountEqualsParm" Type="#Ref-69" />
+    <Item47 Ref="71" Visible="false" Description="Minimum Amount&gt;=" Name="MinimumAmountGreaterThanParm" Type="#Ref-69" />
+    <Item48 Ref="72" Visible="false" Description="Minimum Amount &lt;=" Name="MinimumAmountLessThanParm" Type="#Ref-69" />
+    <Item49 Ref="73" Visible="false" Description="Maximum Amount" Name="MaximumAmountEqualsParm" Type="#Ref-69" />
+    <Item50 Ref="74" Visible="false" Description="Maximum Amount &gt;=" Name="MaximumAmountGreaterThanParm" Type="#Ref-69" />
+    <Item51 Ref="75" Visible="false" Description="Maximum Amount &lt;=" Name="MaximumAmountLessThanParm" Type="#Ref-69" />
+    <Item52 Ref="76" Visible="false" Description="Actual Amount" Name="ActualAmountEqualsParm" Type="#Ref-69" />
+    <Item53 Ref="77" Visible="false" Description="Actual Amount &gt;=" Name="ActualAmountGreaterThanParm" Type="#Ref-69" />
+    <Item54 Ref="78" Visible="false" Description="Actual Amount &lt;=" Name="ActualAmountLessThanParm" Type="#Ref-69" />
+    <Item55 Ref="79" Visible="false" Description="Negotiation Amount" Name="NegotiationAmountEqualsParm" Type="#Ref-69" />
+    <Item56 Ref="80" Visible="false" Description="Negotiation Amount &gt;=" Name="NegotiationAmountGreaterThanParm" Type="#Ref-69" />
+    <Item57 Ref="81" Visible="false" Description="Negotiation Amount &lt;=" Name="NegotiationAmountLessThanParm" Type="#Ref-69" />
+    <Item58 Ref="82" Visible="false" Description="Due" Name="DueParm" Type="#Ref-69" />
+    <Item59 Ref="83" Visible="false" Description="Due &gt;=" Name="DueGreaterThanParm" Type="#Ref-69" />
+    <Item60 Ref="84" Visible="false" Description="Due &lt;=" Name="DueLesserThanParm" Type="#Ref-69" />
+    <Item61 Ref="85" Visible="false" Description="Reduction" Name="ReductionParm" Type="#Ref-69" />
+    <Item62 Ref="86" Visible="false" Description="Staff Created != Modified" Name="StaffAuditRuleParm" Type="#Ref-34" />
+    <Item63 Ref="87" Visible="false" Description="Date Created != Modified" Name="DateAuditRuleParm" Type="#Ref-34" />
+    <Item64 Ref="89" Description="DepoNeeded" Name="DepoNeededParm" Type="#Ref-88" />
+  </Parameters>
+  <CalculatedFields>
+    <Item1 Ref="90" Name="calculatedField1" Expression="GetDate([UserTab1].[UserDefinedData].[Depo Date])" />
+    <Item2 Ref="91" Name="calculatedField2" FieldType="DateTime" Expression="GetDate([Depo Date])" DataMember="UserTab1.UserDefinedData" />
+  </CalculatedFields>
+  <Bands>
+    <Item1 Ref="92" ControlType="DetailBand" Name="Detail" Expanded="false" HeightF="23" TextAlignment="TopLeft" StyleName="DataField" Padding="0,0,0,0,100">
+      <StylePriority Ref="93" UseFont="false" />
+    </Item1>
+    <Item2 Ref="94" ControlType="TopMarginBand" Name="TopMargin" HeightF="50" TextAlignment="BottomLeft" StyleName="PageInfo" Padding="0,0,0,0,100">
+      <Controls>
+        <Item1 Ref="95" ControlType="Needles.ReportDesigner.Controls.FirmNameLabel, Needles.ReportDesigner, Version=5.0.0.43721, Culture=neutral, PublicKeyToken=null" Name="firmNameLabel1" Multiline="true" Text="Firm Name" TextAlignment="MiddleCenter" SizeF="1000,23" LocationFloat="0, 26.9999981" Padding="2,2,0,0,100" />
+      </Controls>
+    </Item2>
+    <Item3 Ref="96" ControlType="BottomMarginBand" Name="BottomMargin" HeightF="50" TextAlignment="BottomLeft" StyleName="PageInfo" Padding="0,0,0,0,100" />
+    <Item4 Ref="97" ControlType="PageHeaderBand" Name="PageHeader" TextAlignment="MiddleLeft" StyleName="FieldCaption">
+      <Controls>
+        <Item1 Ref="98" ControlType="XRLabel" Name="label11" Text="Deposition Status Report" TextAlignment="MiddleCenter" SizeF="1000,32.9999771" LocationFloat="0, 0" Font="Segoe UI, 18pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="99" UseFont="false" UseTextAlignment="false" />
+        </Item1>
+        <Item2 Ref="100" ControlType="XRLabel" Name="label10" Text="Date" TextAlignment="BottomLeft" SizeF="80.62487,40" LocationFloat="72.47671, 50.999958" StyleName="FieldCaption" Font="Segoe UI, 9pt, style=Bold" Padding="2,2,0,0,100">
+          <InteractiveSorting Ref="102" TargetBand="#Ref-101" FieldName="UserTab1.UserDefinedData.calculatedField2" />
+          <StylePriority Ref="103" UseFont="false" UseTextAlignment="false" />
+        </Item2>
+        <Item3 Ref="104" ControlType="XRLabel" Name="label19" Text="RGRA Case Title" TextAlignment="BottomLeft" SizeF="297.414368,25.0000153" LocationFloat="253.695358, 65.9999847" StyleName="FieldCaption" Font="Segoe UI, 9pt, style=Bold" Padding="2,2,0,0,100">
+          <InteractiveSorting Ref="105" TargetBand="#Ref-92" FieldName="Case.CaseNumber" />
+          <StylePriority Ref="106" UseFont="false" UseTextAlignment="false" />
+        </Item3>
+        <Item4 Ref="107" ControlType="XRLabel" Name="label2" Text="Court Reporter" TextAlignment="BottomLeft" SizeF="213.963013,25.0000038" LocationFloat="551.109741, 65.9999847" StyleName="FieldCaption" Font="Segoe UI, 9pt, style=Bold" Padding="2,2,0,0,100">
+          <InteractiveSorting Ref="108" TargetBand="#Ref-92" FieldName="Case.CaseNumber" />
+          <StylePriority Ref="109" UseFont="false" UseTextAlignment="false" />
+        </Item4>
+        <Item5 Ref="110" ControlType="XRLabel" Name="label5" Text="Client.Matter" TextAlignment="BottomLeft" SizeF="100.593781,25" LocationFloat="153.101578, 66" StyleName="FieldCaption" Font="Segoe UI, 9pt, style=Bold" Padding="2,2,0,0,100">
+          <InteractiveSorting Ref="111" TargetBand="#Ref-92" FieldName="Case.CaseNumber" />
+          <StylePriority Ref="112" UseFont="false" UseTextAlignment="false" />
+        </Item5>
+        <Item6 Ref="113" ControlType="XRLabel" Name="label4" Text="Witness Name" TextAlignment="BottomLeft" SizeF="191.874939,25" LocationFloat="765.0728, 65.9999847" StyleName="FieldCaption" Font="Segoe UI, 9pt, style=Bold" Padding="2,2,0,0,100">
+          <InteractiveSorting Ref="114" TargetBand="#Ref-92" FieldName="UserDefinedData.Witness Name.FullName" />
+          <StylePriority Ref="115" UseFont="false" UseTextAlignment="false" />
+        </Item6>
+        <Item7 Ref="116" ControlType="XRLabel" Name="label7" Text="Int" TextAlignment="BottomLeft" SizeF="42.010498,24.9999924" LocationFloat="956.947754, 65.9999847" StyleName="FieldCaption" Font="Segoe UI, 9pt, style=Bold" Padding="2,2,0,0,100">
+          <InteractiveSorting Ref="117" TargetBand="#Ref-92" FieldName="UserDefinedData.Witness Name.FullName" />
+          <StylePriority Ref="118" UseFont="false" UseTextAlignment="false" />
+        </Item7>
+        <Item8 Ref="119" ControlType="XRLine" Name="line1" LineWidth="2" SizeF="1000,7.37500763" LocationFloat="0, 90.99998" ForeColor="Maroon" BorderWidth="2">
+          <StylePriority Ref="120" UseForeColor="false" UseBorderWidth="false" />
+        </Item8>
+        <Item9 Ref="121" ControlType="XRLabel" Name="label6" Text="Depo Needed" TextAlignment="BottomLeft" SizeF="72.4767,40" LocationFloat="0, 50.9999771" StyleName="FieldCaption" Font="Segoe UI, 9pt, style=Bold" Padding="2,2,0,0,100">
+          <InteractiveSorting Ref="122" TargetBand="#Ref-92" FieldName="UserDefinedData.Depo Date" />
+          <StylePriority Ref="123" UseFont="false" UseTextAlignment="false" />
+        </Item9>
+      </Controls>
+    </Item4>
+    <Item5 Ref="124" ControlType="PageFooterBand" Name="PageFooter" HeightF="23" TextAlignment="BottomLeft" StyleName="PageInfo">
+      <Controls>
+        <Item1 Ref="125" ControlType="XRPageInfo" Name="pageInfo4" PageInfo="DateTime" TextFormatString="{0:MM/dd/yyyy h:mm tt}" SizeF="180,23" LocationFloat="0, 0" StyleName="CurrentDateTime" Font="Calibri, 9pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="126" UseFont="false" />
+        </Item1>
+        <Item2 Ref="127" ControlType="XRPageInfo" Name="pageInfo3" TextFormatString="Page {0} of {1}" TextAlignment="TopRight" SizeF="175,23" LocationFloat="825, 0" StyleName="PageNofN" Padding="2,2,0,0,100" />
+        <Item3 Ref="128" ControlType="Needles.ReportDesigner.Controls.CurrentUserLabel, Needles.ReportDesigner, Version=5.0.0.43721, Culture=neutral, PublicKeyToken=null" Name="currentUserLabel1" Multiline="true" Text="Current User" TextAlignment="MiddleCenter" SizeF="645,23" LocationFloat="179.999985, 0" Padding="2,2,0,0,100" />
+      </Controls>
+    </Item5>
+    <Item6 Ref="129" ControlType="ReportHeaderBand" Name="ReportHeader" Expanded="false" HeightF="51" StyleName="Title" />
+    <Item7 Ref="130" ControlType="ReportFooterBand" Name="ReportFooter" HeightF="96.20835">
+      <Controls>
+        <Item1 Ref="131" ControlType="XRLabel" Name="label16" Multiline="true" Text="label16" SizeF="504.978821,15.0000458" LocationFloat="101.339294, 73.9999847" Font="Segoe UI, 7pt" Padding="2,2,0,0,100">
+          <DataBindings>
+            <Item1 Ref="133" Parameter="#Ref-89" PropertyName="Text" DataMember="DepoNeededParm" />
+          </DataBindings>
+          <StylePriority Ref="134" UseFont="false" />
+        </Item1>
+        <Item2 Ref="135" ControlType="Needles.ReportDesigner.Controls.ShowSelectedParameter, Needles.ReportDesigner, Version=5.0.0.43721, Culture=neutral, PublicKeyToken=null" Name="showSelectedParameter2" Multiline="true" Text="Select A Parameter" TextAlignment="MiddleLeft" SizeF="504.978821,15.0000038" LocationFloat="101.339294, 59" Font="Segoe UI, 7pt" Padding="2,2,0,0,100">
+          <DataBindings>
+            <Item1 Ref="136" Parameter="#Ref-10" PropertyName="Text" DataMember="CaseTypeParm" />
+          </DataBindings>
+          <StylePriority Ref="137" UseFont="false" />
+        </Item2>
+        <Item3 Ref="138" ControlType="Needles.ReportDesigner.Controls.ShowSelectedParameter, Needles.ReportDesigner, Version=5.0.0.43721, Culture=neutral, PublicKeyToken=null" Name="showSelectedParameter1" Multiline="true" Text="Select A Parameter" TextAlignment="MiddleLeft" SizeF="504.978821,15.0000038" LocationFloat="101.339279, 43.9999962" Font="Segoe UI, 7pt" Padding="2,2,0,0,100">
+          <DataBindings>
+            <Item1 Ref="139" Parameter="#Ref-8" PropertyName="Text" DataMember="PrimaryStaffParm" />
+          </DataBindings>
+          <StylePriority Ref="140" UseFont="false" />
+        </Item3>
+        <Item4 Ref="141" ControlType="XRLabel" Name="label38" Text="Case Type:" SizeF="101.339294,15" LocationFloat="0, 59" Font="Segoe UI, 7pt, style=Bold" ForeColor="Black" Padding="2,2,0,0,100">
+          <StylePriority Ref="142" UseFont="false" UseForeColor="false" />
+        </Item4>
+        <Item5 Ref="143" ControlType="XRLabel" Name="label28" Text="Primary Staff:" SizeF="101.339294,14.99999" LocationFloat="0, 43.9999847" Font="Segoe UI, 7pt, style=Bold" ForeColor="Black" Padding="2,2,0,0,100">
+          <StylePriority Ref="144" UseFont="false" UseForeColor="false" />
+        </Item5>
+        <Item6 Ref="145" ControlType="XRLabel" Name="label36" Text="Report Criteria:" TextAlignment="TopLeft" SizeF="140.65,24" LocationFloat="0, 13.593792" Font="Segoe UI, 12pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="146" UseFont="false" UseTextAlignment="false" />
+        </Item6>
+        <Item7 Ref="147" ControlType="XRLine" Name="line2" SizeF="1000,7.37500763" LocationFloat="0, 0" ForeColor="Black" BorderWidth="2">
+          <StylePriority Ref="148" UseForeColor="false" UseBorderWidth="false" />
+        </Item7>
+        <Item8 Ref="149" ControlType="XRLabel" Name="label15" Text="Depo Needed:" SizeF="101.339294,15" LocationFloat="0, 74.00003" Font="Segoe UI, 7pt, style=Bold" ForeColor="Black" Padding="2,2,0,0,100">
+          <StylePriority Ref="150" UseFont="false" UseForeColor="false" />
+        </Item8>
+      </Controls>
+    </Item7>
+    <Item8 Ref="151" ControlType="DetailReportBand" Name="DetailReport" Level="0" FilterString="[UserDefinedData][[DepoNeeded] Like ?DepoNeededParm]" DataMember="UserTab1">
+      <Bands>
+        <Item1 Ref="101" ControlType="DetailBand" Name="Detail1" HeightF="23" KeepTogether="true">
+          <SortFields>
+            <Item1 Ref="152" FieldName="UserDefinedData.calculatedField2" />
+          </SortFields>
+          <Controls>
+            <Item1 Ref="153" ControlType="XRLabel" Name="label1" TextFormatString="{0:MM/dd/yyyy}" Multiline="true" Text="label1" SizeF="80.62487,23" LocationFloat="72.47671, 0" Padding="2,2,0,0,100">
+              <DataBindings>
+                <Item1 Ref="154" PropertyName="Text" DataMember="UserTab1.UserDefinedData.calculatedField2" />
+              </DataBindings>
+            </Item1>
+            <Item2 Ref="155" ControlType="XRLabel" Name="label3" Multiline="true" Text="label3" SizeF="100.593781,23" LocationFloat="153.101578, 0" Padding="2,2,0,0,100">
+              <DataBindings>
+                <Item1 Ref="156" PropertyName="Text" DataMember="AlternateCaseNumber1" />
+              </DataBindings>
+            </Item2>
+            <Item3 Ref="157" ControlType="XRLabel" Name="label8" Multiline="true" Text="label8" SizeF="297.414368,23" LocationFloat="253.695358, 0" Padding="2,2,0,0,100">
+              <DataBindings>
+                <Item1 Ref="158" PropertyName="Text" DataMember="Title" />
+              </DataBindings>
+            </Item3>
+            <Item4 Ref="159" ControlType="XRLabel" Name="label9" Multiline="true" Text="label9" SizeF="213.963013,23" LocationFloat="551.109741, 0" Padding="2,2,0,0,100">
+              <DataBindings>
+                <Item1 Ref="160" PropertyName="Text" DataMember="UserTab1.UserDefinedData.Court Reporter.FullName" />
+              </DataBindings>
+            </Item4>
+            <Item5 Ref="161" ControlType="XRLabel" Name="label12" Multiline="true" Text="label12" SizeF="191.874939,23" LocationFloat="765.0728, 0" Padding="2,2,0,0,100">
+              <DataBindings>
+                <Item1 Ref="162" PropertyName="Text" DataMember="UserTab1.UserDefinedData.Witness Name.FullName" />
+              </DataBindings>
+            </Item5>
+            <Item6 Ref="163" ControlType="XRLabel" Name="label13" Multiline="true" Text="label13" SizeF="43.0522461,23" LocationFloat="956.947754, 0" Padding="2,2,0,0,100">
+              <DataBindings>
+                <Item1 Ref="164" PropertyName="Text" DataMember="UserTab1.UserDefinedData.Interpreter" />
+              </DataBindings>
+            </Item6>
+            <Item7 Ref="165" ControlType="XRLabel" Name="label14" Multiline="true" Text="label14" SizeF="72.47671,23" LocationFloat="0, 0" Padding="2,2,0,0,100">
+              <DataBindings>
+                <Item1 Ref="166" PropertyName="Text" DataMember="UserTab1.UserDefinedData.DepoNeeded" />
+              </DataBindings>
+            </Item7>
+          </Controls>
+        </Item1>
+      </Bands>
+    </Item8>
+    <Item9 Ref="167" ControlType="GroupHeaderBand" Name="GroupHeader1">
+      <GroupFields>
+        <Item1 Ref="168" FieldName="UserTab1.UserDefinedData.calculatedField2" />
+      </GroupFields>
+    </Item9>
+  </Bands>
+  <ExportOptions Ref="169">
+    <PrintPreview Ref="170" DefaultDirectory="C:\Users\NDLSTest7\Desktop" />
+  </ExportOptions>
+  <StyleSheet>
+    <Item1 Ref="171" Name="PageInfo" BorderStyle="Inset" Font="Calibri, 9pt, style=Bold, charSet=0" BackColor="Transparent" BorderColor="Black" StringFormat="Near;Far;0;None;Character;Default" TextAlignment="BottomLeft" />
+    <Item2 Ref="172" Name="FieldCaption" BorderStyle="Inset" Font="Segoe UI, 10pt, style=Bold, charSet=0" ForeColor="Maroon" BackColor="Transparent" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" />
+    <Item3 Ref="173" Name="DataField" BorderStyle="Inset" Font="Segoe UI, 9pt, charSet=0" ForeColor="Black" BackColor="Transparent" BorderColor="Black" StringFormat="Near;Near;0;None;Character;Default" TextAlignment="TopLeft" />
+    <Item4 Ref="174" Name="FirmNameStyle" BorderStyle="Inset" Font="Calibri, 9pt, style=Bold, charSet=0" BackColor="0,0,0,0" BorderColor="Transparent" StringFormat="Center;Center;0;None;Character;Default" TextAlignment="MiddleCenter" />
+    <Item5 Ref="175" Name="Title" BorderStyle="Inset" Font="Segoe UI, 18pt, style=Bold, charSet=0" ForeColor="Maroon" StringFormat="Center;Near;0;None;Character;Default" TextAlignment="TopCenter" />
+    <Item6 Ref="176" Name="CurrentDateTime" BorderStyle="Inset" Font="Calibri, 9pt, style=Bold, charSet=0" StringFormat="Near;Far;0;None;Character;Default" TextAlignment="BottomLeft" />
+    <Item7 Ref="177" Name="RunBy" BorderStyle="Inset" Font="Calibri, 9pt, style=Bold, charSet=0" StringFormat="Center;Far;0;None;Character;Default" TextAlignment="BottomCenter" />
+    <Item8 Ref="178" Name="PageNofN" BorderStyle="Inset" Font="Calibri, 9pt, style=Bold, charSet=0" StringFormat="Far;Far;0;None;Character;Default" TextAlignment="BottomRight" />
+    <Item9 Ref="179" Name="GroupTitle" BorderStyle="Inset" Font="Segoe UI, 14pt, style=Bold, charSet=0" ForeColor="Maroon" StringFormat="Near;Near;0;None;Character;Default" TextAlignment="TopLeft" />
+    <Item10 Ref="180" Name="GroupFooter" BorderStyle="Inset" Font="Segoe UI, 12pt, style=Bold, charSet=0" StringFormat="Near;Near;0;None;Character;Default" TextAlignment="TopLeft" />
+    <Item11 Ref="181" Name="ReptFooter" BorderStyle="Inset" Font="Segoe UI, 12pt, style=Bold, charSet=0" StringFormat="Near;Near;0;None;Character;Default" TextAlignment="TopLeft" />
+    <Item12 Ref="182" Name="SelectParameter" BorderStyle="Inset" Font="Segoe UI, 7pt" StringFormat="Near;Near;0;None;Character;Default" TextAlignment="TopLeft" />
+    <Item13 Ref="183" Name="ParameterCaption" BorderStyle="Inset" Font="Segoe UI, 7pt, style=Bold, charSet=0" StringFormat="Near;Near;0;None;Character;Default" TextAlignment="TopLeft" />
+  </StyleSheet>
+  <ObjectStorage>
+    <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v19.1" Ref="7" Content="Needles.Core.Entities.Common.StaffPersonBasic" Type="System.Type" />
+    <Item2 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v19.1" Ref="9" Content="Needles.Core.Entities.Common.CaseType" Type="System.Type" />
+    <Item3 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v19.1" Ref="12" Content="Needles.Core.Entities.Staff.StaffRole" Type="System.Type" />
+    <Item4 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v19.1" Ref="14" Content="Needles.Core.Entities.Staff.StaffRoleCategory" Type="System.Type" />
+    <Item5 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v19.1" Ref="16" Content="Needles.Core.Entities.Common.ClassCode" Type="System.Type" />
+    <Item6 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v19.1" Ref="18" Content="Needles.Core.Entities.Common.Party" Type="System.Type" />
+    <Item7 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v19.1" Ref="20" Content="Needles.Core.Entities.Common.Case" Type="System.Type" />
+    <Item8 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v19.1" Ref="22" Content="Needles.Core.Entities.PartyRoleList" Type="System.Type" />
+    <Item9 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v19.1" Ref="26" Content="Needles.Core.Entities.IDCodeList" Type="System.Type" />
+    <Item10 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v19.1" Ref="28" Content="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" Type="System.Type" />
+    <Item11 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v19.1" Ref="34" Content="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" Type="System.Type" />
+    <Item12 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v19.1" Ref="42" Content="Needles.Core.Entities.Common.Name" Type="System.Type" />
+    <Item13 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v19.1" Ref="47" Content="Needles.Core.Entities.CompanionCases.CompanionCaseGroup" Type="System.Type" />
+    <Item14 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v19.1" Ref="60" Content="Needles.Core.Entities.Checklist.DirectoryChecklistSelection" Type="System.Type" />
+    <Item15 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v19.1" Ref="64" Content="Needles.Core.Entities.Insurance.InsuranceType" Type="System.Type" />
+    <Item16 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v19.1" Ref="66" Content="Needles.Core.Entities.Insurance.Resolution" Type="System.Type" />
+    <Item17 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v19.1" Ref="69" Content="System.Decimal" Type="System.Type" />
+    <Item18 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v19.1" Ref="88" Content="Needles.Core.Entities.UserDefined.UserTab1Data" Type="System.Type" />
+    <Item19 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v19.1" Ref="0" Content="~Xtra#NULL" Type="Needles.ReportDesigner.ReportData.ReportBindingSource`1[[Needles.ReportDesigner.ReportData.ICaseReportData, Needles.ReportDesigner, Version=5.0.0.43721, Culture=neutral, PublicKeyToken=null]]" />
+  </ObjectStorage>
+</XtraReportsLayoutSerializer>

@@ -1,0 +1,85 @@
+	
+	=======================================================
+		All Names Report Batch-1
+	===================================================
+		Provider Role List 
+	<------------------------------------------------->
+		(
+		'ADJUSTER',
+		'ADMINISTRATIVE',
+		'AMBULANCE',
+		'ANESTHESIA',
+		'ATTORNEY',
+		'COLLECTION CO.',
+		'COURT',
+		'COURT REPORTER',
+		'DEFENSE EXPERT',
+		'ECONOMIST',
+		'EMERGENCY',
+		'EMPLOYER',
+		'ER PHYSICIANS'
+		)
+		
+	=======================================================
+		All Names Report Batch-2
+	===================================================
+		Provider Role List 
+	<------------------------------------------------->
+		(
+		'DOCTOR',
+		'EXPERT WITNESS',
+		'GB DR',
+		'HEALTH INS',
+		'HOSPITAL',
+		'INSURANCE AGENT',
+		'INSURER',
+		'JUDGE',
+		'LIENS',
+		'Listserves',
+		'Marketing',
+		'Masters Mktg',
+		'Medical Practice',
+		'Medicare',
+		'MILITARY SERVICE',
+		'MRI'
+		)
+	
+	=======================================================
+		All Names Report Batch-3
+	===================================================
+		Provider Role List 
+	<------------------------------------------------->
+	
+	('Intake')
+	
+	=======================================================
+		All Names Report Batch-4
+	===================================================
+		Provider Role List 
+	<------------------------------------------------->
+	
+	(
+	'PATHOLOGY',
+	'PHYSICAL THERAPY',
+	'POLICE',
+	'PRIVATE INV',
+	'RADIOLOGY',
+	'REFERRAL',
+	'SOC SEC DIS',
+	'SOCIAL SEC DIS',
+	'System Default',
+	'VAB',
+	'WITNESS',
+	'X-RAY',
+	'XEROXING CHARGE',
+	'OTHER',
+	'Outlook'
+	)
+	
+	=======================================================
+		All Names Report Batch-5
+	===================================================
+		Provider Role List 
+	<------------------------------------------------->
+	
+	IS NULL or Empty

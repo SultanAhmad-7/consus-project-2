@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="19.1.6.0" Ref="1" ControlType="Needles.ReportDesigner.ReportObjects.NameReport, Needles.ReportDesigner, Version=5.0.0.43732, Culture=neutral, PublicKeyToken=null" Name="nameReport1" DisplayName="Needles Report 1 (Name)" Landscape="true" Margins="50, 50, 50, 50" PaperKind="Custom" PageWidth="1800" PageHeight="850" Version="19.1" EventsInfo="nameReport1,DesignerLoaded,OnDesignerLoaded;nameReport1,ParametersRequestSubmit,ReportObjectBaseParametersRequestSubmit;nameReport1,AfterPrint,ReportObjectAfterPrint" DataSource="#Ref-0" Font="Segoe UI, 10pt">
+  <Extensions>
+    <Item1 Ref="2" Key="NeedlesStyleSheetName" Value="'Needles'" />
+    <Item2 Ref="3" Key="DataSerializationExtension" Value="CustomTypes" />
+    <Item3 Ref="4" Key="DataEditorExtension" Value="CustomTypes" />
+    <Item4 Ref="5" Key="ParameterEditorExtension" Value="CustomTypes" />
+  </Extensions>
+  <Parameters>
+    <Item1 Ref="7" Visible="false" Description="ID Code" MultiValue="true" Name="IDCodeParm" Type="#Ref-6" />
+    <Item2 Ref="9" Visible="false" Description="Mailing List" MultiValue="true" Name="MailingListParm" Type="#Ref-8" />
+    <Item3 Ref="11" Visible="false" Description="Date Of Birth Start" Name="DateOfBirthStartParm" Type="#Ref-10" />
+    <Item4 Ref="12" Visible="false" Description="Date Of Birth End" ValueInfo="0001-12-31" Name="DateOfBirthEndParm" Type="#Ref-10" />
+    <Item5 Ref="14" Visible="false" Description="Include Deceased" Name="IncludeDeceasedParm" Type="#Ref-13" />
+    <Item6 Ref="15" Visible="false" Description="Include Minors" Name="IncludeMinorsParm" Type="#Ref-13" />
+    <Item7 Ref="17" Visible="false" Description="City" Name="CityParm" />
+    <Item8 Ref="18" Visible="false" Description="County" Name="CountyParm" />
+    <Item9 Ref="20" Visible="false" Description="State" MultiValue="true" Name="StateParm" Type="#Ref-19" />
+    <Item10 Ref="21" Visible="false" Description="Zip Code" Name="ZipCodeParm" />
+    <Item11 Ref="22" Visible="false" Description="Country" Name="CountryParm" />
+    <Item12 Ref="24" Visible="false" Description="Staff Created" MultiValue="true" Name="StaffCreatedParm" Type="#Ref-23" />
+    <Item13 Ref="26" Visible="false" Description="Created Date Start" Name="CreatedDateStartParm" Type="#Ref-25" />
+    <Item14 Ref="27" Visible="false" Description="Created Date End" Name="CreatedDateEndParm" Type="#Ref-25" />
+    <Item15 Ref="28" Visible="false" Description="Staff Modified" MultiValue="true" Name="StaffModifiedParm" Type="#Ref-23" />
+    <Item16 Ref="29" Visible="false" Description="Modified Date Start" Name="ModifiedDateStartParm" Type="#Ref-25" />
+    <Item17 Ref="30" Visible="false" Description="Modified Date End" Name="ModifiedDateEndParm" Type="#Ref-25" />
+    <Item18 Ref="31" Visible="false" Description="Is A Person" Name="IsAPersonParm" Type="#Ref-13" />
+    <Item19 Ref="32" Visible="false" Description="Staff Created != Modified" Name="StaffAuditRuleParm" Type="#Ref-13" />
+    <Item20 Ref="33" Visible="false" Description="Date Created != Modified" Name="DateAuditRuleParm" Type="#Ref-13" />
+  </Parameters>
+  <Bands>
+    <Item1 Ref="34" ControlType="DetailBand" Name="Detail" HeightF="23" TextAlignment="TopLeft" StyleName="DataField" Padding="0,0,0,0,100">
+      <SortFields>
+        <Item1 Ref="35" FieldName="FullNameWithDeceasedMinor" />
+      </SortFields>
+      <Controls>
+        <Item1 Ref="36" ControlType="XRLabel" Name="label49" Multiline="true" Text="label49" SizeF="48.0001221,23" LocationFloat="1651.99988, 0" Padding="2,2,0,0,96">
+          <DataBindings>
+            <Item1 Ref="37" PropertyName="Text" DataMember="StaffCreated.StaffCode" />
+          </DataBindings>
+        </Item1>
+        <Item2 Ref="38" ControlType="XRLabel" Name="label48" TextFormatString="{0:MM/dd/yyyy}" Multiline="true" Text="label48" SizeF="83,23" LocationFloat="1569, 0" Padding="2,2,0,0,96">
+          <DataBindings>
+            <Item1 Ref="39" PropertyName="Text" DataMember="DateModified" />
+          </DataBindings>
+        </Item2>
+        <Item3 Ref="40" ControlType="XRLabel" Name="label46" Multiline="true" Text="label46" SizeF="158.000244,23" LocationFloat="1327.99976, 0" Padding="2,2,0,0,96">
+          <DataBindings>
+            <Item1 Ref="41" PropertyName="Text" DataMember="HomeEmail.Account" />
+          </DataBindings>
+        </Item3>
+        <Item4 Ref="42" ControlType="XRLabel" Name="label43" TextFormatString="{0:(###) ### - ####}" Multiline="true" Text="label43" SizeF="108,23" LocationFloat="1219.99976, 0" Padding="2,2,0,0,96">
+          <DataBindings>
+            <Item1 Ref="43" PropertyName="Text" DataMember="MobilePhone.FormatNumber" />
+          </DataBindings>
+        </Item4>
+        <Item5 Ref="44" ControlType="XRLabel" Name="label42" TextFormatString="{0:(###) ### - ####}" Multiline="true" Text="label42" SizeF="100,23" LocationFloat="1119.99976, 0" Padding="2,2,0,0,96">
+          <DataBindings>
+            <Item1 Ref="45" PropertyName="Text" DataMember="HomePhone.FormatNumber" />
+          </DataBindings>
+        </Item5>
+        <Item6 Ref="46" ControlType="XRLabel" Name="label39" TextFormatString="{0:MM/dd/yyyy}" Multiline="true" Text="label39" SizeF="86,23" LocationFloat="1032.99976, 0" Padding="2,2,0,0,96">
+          <DataBindings>
+            <Item1 Ref="47" PropertyName="Text" DataMember="DateOfBirth" />
+          </DataBindings>
+        </Item6>
+        <Item7 Ref="48" ControlType="XRLabel" Name="label37" Multiline="true" Text="label37" SizeF="56.99994,23" LocationFloat="975.9998, 0" Padding="2,2,0,0,96">
+          <DataBindings>
+            <Item1 Ref="49" PropertyName="Text" DataMember="DefaultAddress.County" />
+          </DataBindings>
+        </Item7>
+        <Item8 Ref="50" ControlType="XRLabel" Name="label35" Multiline="true" Text="label35" SizeF="54.99994,23" LocationFloat="920.9999, 0" Padding="2,2,0,0,96">
+          <DataBindings>
+            <Item1 Ref="51" PropertyName="Text" DataMember="DefaultAddress.ZipCodeFormatted" />
+          </DataBindings>
+        </Item8>
+        <Item9 Ref="52" ControlType="XRLabel" Name="label34" Multiline="true" Text="label34" SizeF="47.99994,23" LocationFloat="872.999939, 0" Padding="2,2,0,0,96">
+          <DataBindings>
+            <Item1 Ref="53" PropertyName="Text" DataMember="DefaultAddress.State" />
+          </DataBindings>
+        </Item9>
+        <Item10 Ref="54" ControlType="XRLabel" Name="label31" Multiline="true" Text="label31" SizeF="62.99994,23" LocationFloat="810, 0" Padding="2,2,0,0,96">
+          <DataBindings>
+            <Item1 Ref="55" PropertyName="Text" DataMember="DefaultAddress.City" />
+          </DataBindings>
+        </Item10>
+        <Item11 Ref="56" ControlType="XRLabel" Name="label28" Multiline="true" Text="label28" SizeF="114,23" LocationFloat="696, 0" Padding="2,2,0,0,96">
+          <DataBindings>
+            <Item1 Ref="57" PropertyName="Text" DataMember="DefaultAddress.Address2" />
+          </DataBindings>
+        </Item11>
+        <Item12 Ref="58" ControlType="XRLabel" Name="label12" Multiline="true" Text="label12" SizeF="94.0032959,23" LocationFloat="601.9967, 0" Padding="2,2,0,0,96">
+          <DataBindings>
+            <Item1 Ref="59" PropertyName="Text" DataMember="DefaultAddress.Address1" />
+          </DataBindings>
+        </Item12>
+        <Item13 Ref="60" ControlType="XRLabel" Name="label7" Multiline="true" Text="label7" SizeF="77.9967041,23" LocationFloat="524, 0" Padding="2,2,0,0,96">
+          <DataBindings>
+            <Item1 Ref="61" PropertyName="Text" DataMember="DefaultAddress.Company" />
+          </DataBindings>
+        </Item13>
+        <Item14 Ref="62" ControlType="XRCheckBox" Name="checkBox1" Text="Is A Person?" SizeF="24,23" LocationFloat="500, 0" Padding="2,2,0,0,96">
+          <DataBindings>
+            <Item1 Ref="63" PropertyName="CheckState" DataMember="IsPerson" />
+          </DataBindings>
+        </Item14>
+        <Item15 Ref="64" ControlType="XRLabel" Name="label24" Multiline="true" Text="label24" SizeF="32,23" LocationFloat="468, 0" Padding="2,2,0,0,96">
+          <DataBindings>
+            <Item1 Ref="65" PropertyName="Text" DataMember="Suffix" />
+          </DataBindings>
+        </Item15>
+        <Item16 Ref="66" ControlType="XRLabel" Name="label23" Multiline="true" Text="label23" SizeF="71,23" LocationFloat="397, 0" Padding="2,2,0,0,96">
+          <DataBindings>
+            <Item1 Ref="67" PropertyName="Text" DataMember="LastName" />
+          </DataBindings>
+        </Item16>
+        <Item17 Ref="68" ControlType="XRLabel" Name="label6" Multiline="true" Text="label6" SizeF="65,23" LocationFloat="332, 0" Padding="2,2,0,0,96">
+          <DataBindings>
+            <Item1 Ref="69" PropertyName="Text" DataMember="FirstName" />
+          </DataBindings>
+        </Item17>
+        <Item18 Ref="70" ControlType="XRLabel" Name="label22" Multiline="true" Text="label22" SizeF="30,23" LocationFloat="302, 0" Padding="2,2,0,0,96">
+          <DataBindings>
+            <Item1 Ref="71" PropertyName="Text" DataMember="Prefix" />
+          </DataBindings>
+        </Item18>
+        <Item19 Ref="72" ControlType="XRLabel" Name="label4" Multiline="true" Text="label4" SizeF="52,23" LocationFloat="250, 0" Padding="2,2,0,0,96">
+          <DataBindings>
+            <Item1 Ref="73" PropertyName="Text" DataMember="Parties.Name.ReferenceID" />
+          </DataBindings>
+        </Item19>
+        <Item20 Ref="74" ControlType="XRLabel" Name="label21" Multiline="true" Text="label21" SizeF="54,23" LocationFloat="196, 0" Padding="2,2,0,0,96">
+          <DataBindings>
+            <Item1 Ref="75" PropertyName="Text" DataMember="NameId" />
+          </DataBindings>
+        </Item20>
+        <Item21 Ref="76" ControlType="XRLabel" Name="label18" Multiline="true" Text="label18" SizeF="60,23" LocationFloat="65, 0" Padding="2,2,0,0,96">
+          <DataBindings>
+            <Item1 Ref="77" PropertyName="Text" DataMember="Provider.Name.ReferenceID" />
+          </DataBindings>
+        </Item21>
+        <Item22 Ref="78" ControlType="XRLabel" Name="label1" Multiline="true" Text="label1" SizeF="65,23" LocationFloat="0, 0" Padding="2,2,0,0,96">
+          <DataBindings>
+            <Item1 Ref="79" PropertyName="Text" DataMember="NameId" />
+          </DataBindings>
+        </Item22>
+        <Item23 Ref="80" ControlType="XRLabel" Name="label2" TextFormatString="{0:MM/dd/yyyy}" Multiline="true" Text="label2" SizeF="83,23" LocationFloat="1486, 0" Padding="2,2,0,0,100">
+          <DataBindings>
+            <Item1 Ref="81" PropertyName="Text" DataMember="DateCreated" />
+          </DataBindings>
+        </Item23>
+        <Item24 Ref="82" ControlType="XRLabel" Name="label11" Multiline="true" Text="label11" SizeF="71,23" LocationFloat="125, 0" Padding="2,2,0,0,100">
+          <DataBindings>
+            <Item1 Ref="83" PropertyName="Text" DataMember="Provider.Roles" />
+          </DataBindings>
+        </Item24>
+      </Controls>
+      <StylePriority Ref="84" UseFont="false" />
+    </Item1>
+    <Item2 Ref="85" ControlType="TopMarginBand" Name="TopMargin" HeightF="50" TextAlignment="BottomLeft" StyleName="PageInfo" Padding="0,0,0,0,100">
+      <Controls>
+        <Item1 Ref="86" ControlType="Needles.ReportDesigner.Controls.FirmNameLabel, Needles.ReportDesigner, Version=5.0.0.43732, Culture=neutral, PublicKeyToken=null" Name="firmNameLabel1" Text="Firm Name" TextAlignment="MiddleCenter" SizeF="1700,23" LocationFloat="0, 27" Padding="2,2,0,0,100" />
+      </Controls>
+    </Item2>
+    <Item3 Ref="87" ControlType="BottomMarginBand" Name="BottomMargin" HeightF="50" TextAlignment="BottomLeft" StyleName="PageInfo" Padding="0,0,0,0,100" />
+    <Item4 Ref="88" ControlType="PageHeaderBand" Name="PageHeader" HeightF="94.75005" TextAlignment="MiddleLeft" StyleName="FieldCaption">
+      <Controls>
+        <Item1 Ref="89" ControlType="XRLabel" Name="label50" Text="Create By" SizeF="48.0001221,39" LocationFloat="1651.99988, 51.0000534" Padding="2,2,0,0,100" />
+        <Item2 Ref="90" ControlType="XRLabel" Name="label47" Text="Date Updated" SizeF="83,39" LocationFloat="1569, 51.0000229" Padding="2,2,0,0,100" />
+        <Item3 Ref="91" ControlType="XRLabel" Name="label45" Text="Defaul Email" SizeF="158.000244,39" LocationFloat="1327.99976, 51.0000534" Padding="2,2,0,0,100" />
+        <Item4 Ref="92" ControlType="XRLabel" Name="label44" Text="TelePhone 2" SizeF="108,39" LocationFloat="1219.99976, 51.0000229" Padding="2,2,0,0,100" />
+        <Item5 Ref="93" ControlType="XRLabel" Name="label41" Text="TelePhone 1" SizeF="101,39" LocationFloat="1118.99976, 51.0000534" Padding="2,2,0,0,100" />
+        <Item6 Ref="94" ControlType="XRLabel" Name="label40" Text="DOB" SizeF="86,39" LocationFloat="1032.99976, 51.0000534" Padding="2,2,0,0,100" />
+        <Item7 Ref="95" ControlType="XRLabel" Name="label38" Text="County" SizeF="56.99994,39" LocationFloat="975.9998, 51.0000534" Padding="2,2,0,0,100" />
+        <Item8 Ref="96" ControlType="XRLabel" Name="label36" Text="Zip Code" SizeF="54.99994,39" LocationFloat="920.9999, 51.0000534" Padding="2,2,0,0,100" />
+        <Item9 Ref="97" ControlType="XRLabel" Name="label33" Text="State" SizeF="47.99994,39" LocationFloat="872.999939, 51.0000534" Padding="2,2,0,0,100" />
+        <Item10 Ref="98" ControlType="XRLabel" Name="label32" Text="City" SizeF="62.99994,39" LocationFloat="810, 51.0000229" Padding="2,2,0,0,100" />
+        <Item11 Ref="99" ControlType="XRLabel" Name="label30" Text="Address 2" SizeF="114,39" LocationFloat="696, 51.0000229" Padding="2,2,0,0,100" />
+        <Item12 Ref="100" ControlType="XRLabel" Name="label29" Text="Address 1" SizeF="94.0032959,39" LocationFloat="601.9967, 51.0000534" Padding="2,2,0,0,100" />
+        <Item13 Ref="101" ControlType="XRLabel" Name="label27" Text="Company" SizeF="77.9967041,39" LocationFloat="524, 51.0000534" Padding="2,2,0,0,100" />
+        <Item14 Ref="102" ControlType="XRLabel" Name="label26" Text="Is P?" SizeF="24,39" LocationFloat="500, 51.0000534" Padding="2,2,0,0,100" />
+        <Item15 Ref="103" ControlType="XRLabel" Name="label25" Text="Suffix" SizeF="32,39" LocationFloat="468, 51.0000534" Padding="2,2,0,0,100" />
+        <Item16 Ref="104" ControlType="XRLabel" Name="label10" Text="Last Name" SizeF="71,39" LocationFloat="397, 51.0000534" Padding="2,2,0,0,100" />
+        <Item17 Ref="105" ControlType="XRLabel" Name="label9" Text="First Name" SizeF="65,39" LocationFloat="332, 51.0000534" Padding="2,2,0,0,100" />
+        <Item18 Ref="106" ControlType="XRLabel" Name="label5" Text="Prefix" SizeF="30,39" LocationFloat="302, 51.0000534" Padding="2,2,0,0,100" />
+        <Item19 Ref="107" ControlType="XRLabel" Name="label8" Text="Party Role" SizeF="50,39" LocationFloat="252, 51.0000534" Padding="2,2,0,0,100" />
+        <Item20 Ref="108" ControlType="XRLabel" Name="label20" Text="Party ID" SizeF="56,39" LocationFloat="196, 51.0000229" Padding="2,2,0,0,100" />
+        <Item21 Ref="109" ControlType="XRLabel" Name="label19" Text="Provider ID" SizeF="60,39" LocationFloat="65, 51.0000534" Padding="2,2,0,0,100" />
+        <Item22 Ref="110" ControlType="XRLabel" Name="label16" Text="Date Created" SizeF="83,39" LocationFloat="1486, 51.0000229" Padding="2,2,0,0,100" />
+        <Item23 Ref="111" ControlType="XRLabel" Name="label3" Text="Provider Roles" SizeF="71,39" LocationFloat="125, 51.0000229" Padding="2,2,0,0,100" />
+        <Item24 Ref="112" ControlType="XRLabel" Name="label14" Text="Testing Record " TextAlignment="MiddleCenter" SizeF="999.6407,35" LocationFloat="0, 0" StyleName="Title" Padding="2,2,0,0,100">
+          <StylePriority Ref="113" UseTextAlignment="false" />
+        </Item24>
+        <Item25 Ref="114" ControlType="XRLabel" Name="label15" Text="Name ID" SizeF="65,39" LocationFloat="0, 51.0000229" Padding="2,2,0,0,100" />
+        <Item26 Ref="115" ControlType="XRLine" Name="line2" LineWidth="2" SizeF="1700,4.75" LocationFloat="0, 90.00005" />
+      </Controls>
+    </Item4>
+    <Item5 Ref="116" ControlType="PageFooterBand" Name="PageFooter" HeightF="27.00001" TextAlignment="BottomLeft" StyleName="PageInfo">
+      <Controls>
+        <Item1 Ref="117" ControlType="XRPageInfo" Name="pageInfo4" PageInfo="DateTime" TextFormatString="{0:MM/dd/yyyy h:mm tt}" SizeF="311,27.00001" LocationFloat="0, 0" StyleName="CurrentDateTime" Padding="2,2,0,0,100" />
+        <Item2 Ref="118" ControlType="Needles.ReportDesigner.Controls.CurrentUserLabel, Needles.ReportDesigner, Version=5.0.0.43732, Culture=neutral, PublicKeyToken=null" Name="currentUserLabel2" Text="Current User" TextAlignment="MiddleCenter" SizeF="1089,27.00001" LocationFloat="311, 0" StyleName="RunBy" Padding="2,2,0,0,100" />
+        <Item3 Ref="119" ControlType="XRPageInfo" Name="pageInfo3" TextFormatString="Page {0} of {1}" TextAlignment="TopRight" SizeF="300,27.00001" LocationFloat="1400, 0" StyleName="PageNofN" Padding="2,2,0,0,100" />
+      </Controls>
+    </Item5>
+    <Item6 Ref="120" ControlType="ReportHeaderBand" Name="ReportHeader" Expanded="false" HeightF="51" StyleName="Title" />
+    <Item7 Ref="121" ControlType="ReportFooterBand" Name="ReportFooter" HeightF="29.0000076">
+      <Controls>
+        <Item1 Ref="122" ControlType="XRLabel" Name="label17" Multiline="true" Text="Total Record:" SizeF="100,23" LocationFloat="160.958359, 6.00000668" Font="Segoe UI, 10pt, style=Bold" Padding="2,2,0,0,96">
+          <StylePriority Ref="123" UseFont="false" />
+        </Item1>
+        <Item2 Ref="124" ControlType="XRLabel" Name="label13" Multiline="true" SizeF="143,23" LocationFloat="260.958344, 6.00000668" Font="Segoe UI, 10pt, style=Bold, Underline" Padding="2,2,0,0,100">
+          <Summary Ref="125" Running="Report" Func="Count" />
+          <DataBindings>
+            <Item1 Ref="126" PropertyName="Text" DataMember="FullNameWithDeceasedMinor" />
+          </DataBindings>
+          <StylePriority Ref="127" UseFont="false" />
+        </Item2>
+      </Controls>
+    </Item7>
+  </Bands>
+  <ExportOptions Ref="128">
+    <PrintPreview Ref="129" DefaultDirectory="C:\Users\NDLSTest9\Desktop" />
+  </ExportOptions>
+  <StyleSheet>
+    <Item1 Ref="130" Name="PageInfo" BorderStyle="Inset" Font="Calibri, 9pt, style=Bold, charSet=0" BackColor="Transparent" BorderColor="Black" StringFormat="Near;Far;0;None;Character;Default" TextAlignment="BottomLeft" />
+    <Item2 Ref="131" Name="FieldCaption" BorderStyle="Inset" Font="Segoe UI, 10pt, style=Bold, charSet=0" ForeColor="Maroon" BackColor="Transparent" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" />
+    <Item3 Ref="132" Name="DataField" BorderStyle="Inset" Font="Segoe UI, 9pt, charSet=0" ForeColor="Black" BackColor="Transparent" BorderColor="Black" StringFormat="Near;Near;0;None;Character;Default" TextAlignment="TopLeft" />
+    <Item4 Ref="133" Name="FirmNameStyle" BorderStyle="Inset" Font="Calibri, 9pt, style=Bold, charSet=0" BackColor="0,0,0,0" BorderColor="Transparent" StringFormat="Center;Center;0;None;Character;Default" TextAlignment="MiddleCenter" />
+    <Item5 Ref="134" Name="Title" BorderStyle="Inset" Font="Segoe UI, 18pt, style=Bold, charSet=0" ForeColor="Maroon" StringFormat="Center;Near;0;None;Character;Default" TextAlignment="TopCenter" />
+    <Item6 Ref="135" Name="CurrentDateTime" BorderStyle="Inset" Font="Calibri, 9pt, style=Bold, charSet=0" StringFormat="Near;Far;0;None;Character;Default" TextAlignment="BottomLeft" />
+    <Item7 Ref="136" Name="RunBy" BorderStyle="Inset" Font="Calibri, 9pt, style=Bold, charSet=0" StringFormat="Center;Far;0;None;Character;Default" TextAlignment="BottomCenter" />
+    <Item8 Ref="137" Name="PageNofN" BorderStyle="Inset" Font="Calibri, 9pt, style=Bold, charSet=0" StringFormat="Far;Far;0;None;Character;Default" TextAlignment="BottomRight" />
+    <Item9 Ref="138" Name="GroupTitle" BorderStyle="Inset" Font="Segoe UI, 14pt, style=Bold, charSet=0" ForeColor="Maroon" StringFormat="Near;Near;0;None;Character;Default" TextAlignment="TopLeft" />
+    <Item10 Ref="139" Name="GroupFooter" BorderStyle="Inset" Font="Segoe UI, 12pt, style=Bold, charSet=0" StringFormat="Near;Near;0;None;Character;Default" TextAlignment="TopLeft" />
+    <Item11 Ref="140" Name="ReptFooter" BorderStyle="Inset" Font="Segoe UI, 12pt, style=Bold, charSet=0" StringFormat="Near;Near;0;None;Character;Default" TextAlignment="TopLeft" />
+    <Item12 Ref="141" Name="SelectParameter" BorderStyle="Inset" Font="Segoe UI, 7pt" StringFormat="Near;Near;0;None;Character;Default" TextAlignment="TopLeft" />
+    <Item13 Ref="142" Name="ParameterCaption" BorderStyle="Inset" Font="Segoe UI, 7pt, style=Bold, charSet=0" StringFormat="Near;Near;0;None;Character;Default" TextAlignment="TopLeft" />
+  </StyleSheet>
+  <ObjectStorage>
+    <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v19.1" Ref="6" Content="Needles.Core.Entities.IDCodeList" Type="System.Type" />
+    <Item2 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v19.1" Ref="8" Content="Needles.Core.Entities.Common.SavableMailingListBasic" Type="System.Type" />
+    <Item3 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v19.1" Ref="10" Content="System.DateTime" Type="System.Type" />
+    <Item4 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v19.1" Ref="13" Content="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" Type="System.Type" />
+    <Item5 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v19.1" Ref="19" Content="Needles.Core.Entities.States" Type="System.Type" />
+    <Item6 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v19.1" Ref="23" Content="Needles.Core.Entities.Common.StaffPersonBasic" Type="System.Type" />
+    <Item7 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v19.1" Ref="25" Content="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" Type="System.Type" />
+    <Item8 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v19.1" Ref="0" Content="~Xtra#NULL" Type="Needles.ReportDesigner.ReportData.ReportBindingSource`1[[Needles.ReportDesigner.ReportData.INameReportData, Needles.ReportDesigner, Version=5.0.0.43732, Culture=neutral, PublicKeyToken=null]]" />
+  </ObjectStorage>
+</XtraReportsLayoutSerializer>
